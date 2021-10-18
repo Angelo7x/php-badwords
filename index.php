@@ -15,6 +15,12 @@
     <h2><?php echo $par1?></h2>
     <h3>La lunghezza del paragrafo è di <?php echo strlen("$par1")?> caratteri</h3>
     <hr>
+    <form>
+        <label for="word">
+            <input type="text" name="word" id="word">
+            <button type="submit">Censura</button>
+        </label>
+    </form>
     <h2>
         <?php echo str_replace($userWord, '***', $par1); ?>
     </h2>
